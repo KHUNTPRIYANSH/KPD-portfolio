@@ -15,7 +15,12 @@ const App = () => {
           <IconButton onClick={showAside}>
             <MoreVertIcon className="bbb" />
           </IconButton>
-
+          <strong>
+            {" "}
+            {" </"}
+            <span className="gold">KPD</span>
+            {">"}
+          </strong>
           <IconButton onClick={showMenu}>
             <MenuIcon className="bbb" />
           </IconButton>

@@ -2,6 +2,7 @@ import React from "react";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";
+import FeedBack from "./FeedBack";
 const Home = () => {
   return (
     <>
@@ -54,7 +55,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <section className="service f-b">
+        <section className="service">
           <div className="t-title">My Services</div>
           <div className="row">
             <div className="col">
@@ -122,6 +123,32 @@ const Home = () => {
               </div>
               <div className="gold">
                 ORDER NOW <ArrowForwardIosIcon className="gold" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="feed">
+          <div className="t-title">
+            Feedback
+            <span className="gold">{" / "}</span>
+            Reviews
+          </div>
+          <FeedBack />
+        </section>
+        <section className="project f-b">
+          <div className="t-title">
+            Feedback
+            <span className="gold">{" / "}</span>
+            Reviews
+          </div>
+          <div className="row">
+            <div className="col">
+              <div className="olay">
+                <div className="t-title">Keffen</div>
+                <div className="s-title">Lorem ipsum dolor sit amet.</div>
+                <div className="gold">
+                  Read More <ArrowForwardIosIcon className="gold" />
+                </div>
               </div>
             </div>
           </div>
