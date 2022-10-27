@@ -877,3 +877,23 @@ footer .ff {
 .cp .mid:hover {
   color: whitesmoke;
 }
+
+/*       .home        */
+
+.home {
+  max-height: 95vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.home::-webkit-scrollbar {
+  width: 2.5px;
+}
+
+.home::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(255, 213, 0, 0.3);
+}
+
+.home::-webkit-scrollbar-thumb {
+  background-color: #ffc107;
+}
