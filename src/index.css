@@ -896,11 +896,11 @@ strong {
   /* transform: rotate(90deg); */
 }
 .txt {
-  margin-top: 28px;
+  margin-top: 18px;
   color: #8c8c8e;
   font-size: 0.8rem;
   font-weight: bold;
-  letter-spacing: 3.5px;
+  letter-spacing: 2px;
   transition: 0.4s;
   cursor: pointer;
 }
