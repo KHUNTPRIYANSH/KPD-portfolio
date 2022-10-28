@@ -3,26 +3,38 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FeedBack from "./FeedBack";
+import CountUp from "react-countup";
+import Typewriter from "typewriter-effect";
 const Home = () => {
   return (
     <>
       <section className="home">
-        <div className="frm">
+        <div className="frm" id="s1">
           <main>
             <div className="left">
               <h1>
                 Discover my Amazing <br />
                 Art Space!
               </h1>
+
               <div className="code">
                 {"<"}
                 <span className="gold">KPD</span>
-                {"> "}
-
-                <span class="typed-out">
-                  I build amazing Websites & Projects
-                </span>
-
+                {"> "}&nbsp;
+                <Typewriter
+                  options={{
+                    strings: [
+                      " Hey, I'm Priyansh Khunt",
+                      " I build amazing Websites & Projects",
+                      " I'm Computer Engineering Student",
+                      " I have also used flutter littlebit",
+                    ],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                  className="ib"
+                />
+                &nbsp;
                 {" </"}
                 <span className="gold">KPD</span>
                 {">"}
@@ -38,24 +50,32 @@ const Home = () => {
           </main>
           <div className="num">
             <div className="n">
-              <span className="gold">4+</span>
+              <span className="gold">
+                <CountUp duration={3.5} end={5} loop={true} />+
+              </span>
               Years Experience
             </div>
             <div className="n">
-              <span className="gold">37+</span>
+              <span className="gold">
+                <CountUp duration={3.5} end={47} />+
+              </span>
               Completed Projects
             </div>
             <div className="n">
-              <span className="gold">185+</span>
+              <span className="gold">
+                <CountUp duration={3.5} end={185} />+
+              </span>
               Happy Customers
             </div>
             <div className="n">
-              <span className="gold">20+</span>
+              <span className="gold">
+                <CountUp duration={3.5} end={14} />+
+              </span>
               Honors and Awards
             </div>
           </div>
         </div>
-        <section className="service">
+        <section className="service" id="s2">
           <div className="t-title">My Services</div>
           <div className="row">
             <div className="col">
@@ -127,7 +147,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className="feed">
+        <section className="feed" id="s3">
           <div className="t-title">
             Feedback
             <span className="gold">{" / "}</span>
@@ -135,24 +155,13 @@ const Home = () => {
           </div>
           <FeedBack />
         </section>
-        <section className="project f-b">
+        <section className="project f-b" id="s4">
           <div className="t-title">
-            Feedback
-            <span className="gold">{" / "}</span>
-            Reviews
+            Skills    
           </div>
-          <div className="row">
-            <div className="col">
-              <div className="olay">
-                <div className="t-title">Keffen</div>
-                <div className="s-title">Lorem ipsum dolor sit amet.</div>
-                <div className="gold">
-                  Read More <ArrowForwardIosIcon className="gold" />
-                </div>
-              </div>
-            </div>
-          </div>
+         {/* Aya Code nakh deje */}
         </section>
+
         <footer>
           <div className="cp">
             <div className="left ff">© 2022 All Rights Reserved.</div>

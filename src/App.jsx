@@ -5,11 +5,12 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import Menu from "./components/Menu";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 const App = () => {
   const showAside = () => {};
   const showMenu = () => {};
   return (
-    <>
+    <Router>
       <div className="hid-frm">
         <div className="nv">
           <IconButton onClick={showAside}>
@@ -26,12 +27,14 @@ const App = () => {
           </IconButton>
         </div>
         <div className="app">
+        
           <Aside />
           <Home />
           <Menu />
+        
         </div>
       </div>
-    </>
+    </Router>
   );
 };
 

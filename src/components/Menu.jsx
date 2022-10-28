@@ -1,25 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Tune } from "@mui/icons-material";
 const Menu = () => {
-  if (document.getElementById("Linkz")) {
-    var Links = document.getElementById("Linkz");
+  const [menu, setMenu] = useState(false);
 
-    Links.style.visibility = "hidden";
-    Links.style.top = "-500px";
-  }
-  var cnt = true;
   var showLink = () => {
-    if (cnt == true) {
+    if (menu == false) {
       console.log("vis");
-      Links.style.visibility = "visible";
-      Links.style.top = "80px";
-      cnt = false;
+
+      document.getElementById("Linkz").style.visibility = "visible";
+      document.getElementById("Linkz").style.top = "80px";
+      setMenu(true);
     } else {
       console.log("hid");
-      Links.style.visibility = "hidden";
-      Links.style.top = "-500px";
-      cnt = true;
+      document.getElementById("Linkz").style.visibility = "hidden";
+      document.getElementById("Linkz").style.top = "-700px";
+
+      setMenu(false);
     }
   };
 
@@ -31,11 +27,25 @@ const Menu = () => {
         </div>
 
         <div className="m-menu" id="Linkz">
-          <div className="txt">HOME</div>
-          <div className="txt">ABOUT</div>
-          <div className="txt">SERVICES</div>
-          <div className="txt">FEEDBACK</div>
-          <div className="txt">CONTACT</div>
+          <a href="#s1" className="txt">
+            HOME
+          </a>
+
+          <a href="#s2" className="txt">
+            SERVICES
+          </a>
+          <a href="#s3" className="txt">
+            FEEDBACK
+          </a>
+          <a href="#s5" className="txt">
+            SKILLS
+          </a>
+          <a href="#s6" className="txt">
+            PROJECTS
+          </a>
+          <a href="#s7" className="txt">
+            CONTACT
+          </a>
         </div>
       </nav>
     </>
