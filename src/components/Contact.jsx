@@ -5,25 +5,25 @@ const Contact = () => {
     return (
         <>
             <div className="info">
-                <div className="reinfo card">
+                <div className="card">
                     <ul>
-                        <li> <strong>Country:</strong> India </li>
-                        <li><strong>City:</strong> Rajkot </li>
-                        <li><strong>Street:</strong>Ring Road</li>
+                        <li className='s-title'> <strong>Country:</strong> India </li>
+                        <li className='s-title'><strong>City:</strong> Rajkot </li>
+                        <li className='s-title'><strong>Street:</strong>Ring Road</li>
                     </ul>
                 </div>
-                <div className="soinf card">
+                <div className="card">
                     <ul>
-                        <li><strong>Email:</strong>carter.inbox@mail.com</li>
-                        <li><strong>Telegram:</strong>@arter</li>
-                        <li><strong>Skype:</strong>Arter</li>
+                        <li className='s-title'><strong>Email:</strong>carter.inbox@mail.com</li>
+                        <li className='s-title'><strong>Telegram:</strong>@arter</li>
+                        <li className='s-title'><strong>Skype:</strong>Arter</li>
                     </ul>
                 </div>
-                <div className="poinfo card">
+                <div className="card">
                     <ul>
-                        <li>Support</li>
-                        <li>Office</li>
-                        <li>Personel</li>
+                        <li className="s-title"><strong>Support:</strong>+91 7123456890</li>
+                        <li className="s-title"><strong>Office:</strong>+91 9812345670</li>
+                        <li className="s-title"><strong>Personal:</strong>+91 6012345789</li>
                     </ul>
                 </div>
             </div>

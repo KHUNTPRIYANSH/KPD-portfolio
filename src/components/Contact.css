@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
+
+
+
 .info {
+    margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Popins';
     font-size: 1.05rem;
+    gap: 1.5rem;
 }
 
 .info ul {
@@ -13,11 +20,14 @@
 .info ul li {
     display: flex;
     justify-content: space-between;
+    font-family: 'Alegreya', sans-serif;
+    margin: 30px 0;
 }
 
 .card {
-    min-width: 200px;
-    padding: 30px;
-    margin: 0 0 30px;
-    background-color: #656565;
+    width: 350px;
+    max-width: 350px;
+    padding: 0 30px;
+    margin-bottom: 30px;
+    background: linear-gradient(159deg,#2d2d3a 0,#2b2b35 100%);
 }
