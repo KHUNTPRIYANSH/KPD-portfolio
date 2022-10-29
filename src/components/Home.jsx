@@ -7,6 +7,7 @@ import Clud from "./Cloud";
 import CountUp from "react-countup";
 import Typewriter from "typewriter-effect";
 import TimeLine from "./TimeLine";
+import Contact from"./Contact";
 const Home = () => {
   const [heart, setHeart] = useState(false);
 
@@ -190,7 +191,12 @@ const Home = () => {
           </div>
           <Clud />
         </section>
-
+        <section className="project contact">
+          <div className="t-title">
+            Contact info
+          </div>
+          <Contact />
+        </section>
         <footer>
           <div className="cp">
             <div className="left ff">© 2022 All Rights Reserved.</div>

@@ -1,0 +1,23 @@
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Popins';
+    font-size: 1.05rem;
+}
+
+.info ul {
+    list-style: none;
+}
+
+.info ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    min-width: 200px;
+    padding: 30px;
+    margin: 0 0 30px;
+    background-color: #656565;
+}

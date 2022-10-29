@@ -10,6 +10,13 @@
 }
 html {
   scroll-behavior: smooth;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
 }
 body {
   background-color: #191923;
@@ -1130,4 +1137,10 @@ footer .ff {
 .cloud Canvas {
   min-height: 50vh;
   height: 600px !important;
+}
+
+.contact {
+  margin-top: 50px;
+  padding: 25px;
+  color: white;
 }
