@@ -1,11 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FeedBack from "./FeedBack";
+import Clud from "./Cloud";
 import CountUp from "react-countup";
 import Typewriter from "typewriter-effect";
+import TimeLine from "./TimeLine";
 const Home = () => {
+  const [heart, setHeart] = useState(false);
+
+  var clickHeart = () => {
+    if (heart == false) {
+      console.log("vis");
+
+      document.getElementById("Heart").classList.remove("fa-heart-o");
+      document.getElementById("Heart").classList.add("fa-heart");
+      setHeart(true);
+    } else {
+      console.log("hid");
+      document.getElementById("Heart").classList.remove("fa-heart");
+      document.getElementById("Heart").classList.add("fa-heart-o");
+
+      setHeart(false);
+    }
+  };
   return (
     <>
       <section className="home">
@@ -25,9 +44,9 @@ const Home = () => {
                   options={{
                     strings: [
                       " Hey, I'm Priyansh Khunt",
-                      " I build amazing Websites & Projects",
-                      " I'm Computer Engineering Student",
-                      " I have also used flutter littlebit",
+                      " I build amazing Websites",
+                      " I'm CSE Student",
+                      " I have also used flutter",
                     ],
                     autoStart: true,
                     loop: true,
@@ -39,7 +58,9 @@ const Home = () => {
                 <span className="gold">KPD</span>
                 {">"}
               </div>
-              <div className="btn jmp">Explore Now</div>
+              <a href="#s4">
+                <div className="btn jmp">Explore Now</div>
+              </a>
             </div>
             {/* <div className="right">
               <img
@@ -75,6 +96,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+
         <section className="service" id="s2">
           <div className="t-title">My Services</div>
           <div className="row">
@@ -147,6 +169,12 @@ const Home = () => {
             </div>
           </div>
         </section>
+        <section className="tml">
+          <div className="t-title">
+            Education <span className="gold">-</span> Journey
+          </div>
+          <TimeLine />
+        </section>
         <section className="feed" id="s3">
           <div className="t-title">
             Feedback
@@ -157,16 +185,18 @@ const Home = () => {
         </section>
         <section className="project f-b" id="s4">
           <div className="t-title">
-            Skills    
+            Technologies <span className="gold">{" / "}</span>
+            Skills
           </div>
-         {/* Aya Code nakh deje */}
+          <Clud />
         </section>
 
         <footer>
           <div className="cp">
             <div className="left ff">© 2022 All Rights Reserved.</div>
-            <div className="mid ff">
-              Made with &nbsp; <FavoriteIcon className="gold" />
+            <div className="mid ff" onClick={clickHeart}>
+              Made with &nbsp;
+              <i className="gold fa fa-heart-o" id="Heart" />
               &nbsp; by
               <span className="gold">&nbsp; KPD </span>
             </div>

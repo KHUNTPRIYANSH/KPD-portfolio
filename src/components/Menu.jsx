@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
+import WidgetsIcon from "@mui/icons-material/Widgets";
 const Menu = () => {
   const [menu, setMenu] = useState(false);
 
@@ -21,9 +22,9 @@ const Menu = () => {
 
   return (
     <>
-      <nav className="side-nav">
+      <nav className="side-nav" id="side-nav">
         <div className="burger" onClick={showLink}>
-          <MenuIcon />
+          <WidgetsIcon />
         </div>
 
         <div className="m-menu" id="Linkz">
@@ -37,13 +38,13 @@ const Menu = () => {
           <a href="#s3" className="txt">
             FEEDBACK
           </a>
-          <a href="#s5" className="txt">
+          <a href="#s4" className="txt">
             SKILLS
           </a>
-          <a href="#s6" className="txt">
+          <a href="#s5" className="txt">
             PROJECTS
           </a>
-          <a href="#s7" className="txt">
+          <a href="#s6" className="txt">
             CONTACT
           </a>
         </div>

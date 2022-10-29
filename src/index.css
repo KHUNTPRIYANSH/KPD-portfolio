@@ -94,6 +94,7 @@ aside {
   /* border-radius: 18px 0 0 18px !important; */
   overflow: scroll;
   overflow-x: hidden;
+  transition: all ease-in-out 1s;
   /* position: fixed; */
 }
 .a-1 {
@@ -654,14 +655,14 @@ strong {
   font-size: 1.2rem;
   transition: 0.5s !important;
   cursor: pointer;
-  animation: beat 0.5s ease-in-out infinite alternate;
+  animation: beat 1.5s ease-in-out infinite alternate;
 }
 .down-icon {
   color: rgb(187, 131, 0);
   color: #8c8c8e;
   margin-left: 7.5px;
   transition: 0.5s !important;
-  animation: beat-g 0.5s ease-in-out infinite alternate;
+  animation: beat-g 1.5s ease-in-out infinite alternate;
 }
 .down:hover {
   color: whitesmoke;
@@ -707,7 +708,7 @@ strong {
 #s3,
 #s4,
 #s5 {
-  scroll-snap-align: center;
+  /* scroll-snap-align: center; */
 }
 /*===============home===============*/
 .home {
@@ -810,6 +811,7 @@ strong {
   font-size: 0.8rem;
   position: relative;
   top: 10px;
+  transition: 0.3s ease-in-out;
   cursor: pointer;
 }
 .num {
@@ -823,14 +825,16 @@ strong {
   gap: 25px;
 }
 .btn:hover {
-  animation: jump 0.7s infinite ease-in-out alternate;
+  transform: scale(1.05);
+
+  /* animation: jump 0.7s infinite ease-in-out alternate; */
 }
-@keyframes jump {
+/* @keyframes jump {
   to {
     top: 0px;
     transform: scale(1.05);
   }
-}
+} */
 .n .gold {
   font-size: 1.5rem;
   font-weight: bolder;
@@ -853,6 +857,8 @@ strong {
   padding: 7px 15px;
   align-items: center;
   width: 100%;
+  z-index: 1000000 !important;
+  position: fixed !important;
 }
 .nv .bbb {
   color: #c0c0c0 !important;
@@ -866,6 +872,7 @@ strong {
   height: 95vh;
   width: 75px;
   overflow: hidden;
+  transition: all ease-in-out 0.7s;
 }
 
 .side-nav .burger {
@@ -906,8 +913,8 @@ strong {
 }
 .f-b {
   content: '';
-  background: linear-gradient(to bottom, #191923, #191923, #19192322),
-    url('https://bslthemes.com/arter/wp-content/uploads/2020/09/bg.jpg');
+  background: radial-gradient(#191923d8, #191923),
+    url('https://raw.githubusercontent.com/KHUNTPRIYANSH/KPD-portfolio/main/imgs/bg2.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -942,7 +949,7 @@ strong {
   border-radius: 3px;
   line-height: 25px;
   background-color: #272731;
-  padding: 33px;
+  padding: 45px 33px;
   transition: 0.35s ease-in-out;
 }
 .service .row .col .t-title {
@@ -1011,17 +1018,33 @@ strong {
     font-size: 1rem;
   }
   .frm main .left {
-    padding: 25px;
+    padding: 50px 25px;
+    padding-top: 95px;
     align-items: center;
     text-align: center;
   }
 }
 @media only screen and (max-width: 1150px) {
+  .home {
+    width: 100%;
+    height: 100%;
+  }
+  .hid-frm {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+  }
   aside {
-    display: none;
+    left: -700px;
+    position: fixed;
+    visibility: hidden;
+    z-index: 1000;
   }
   .side-nav {
-    display: none;
+    z-index: 1000;
+    right: -300px;
+    position: fixed !important;
+    visibility: hidden;
   }
 }
 @media only screen and (min-width: 1150px) {
@@ -1039,15 +1062,24 @@ footer {
   padding: 12.5px 25px;
   font-size: 0.9rem !important;
 }
-footer .gold {
-  font-size: 0.9rem !important;
-}
+
 footer .mid {
   display: flex;
   align-items: center;
+  animation-delay: 1.5s;
+  transition: 0.5s ease-in-out;
+  animation: beat 1.2s ease-in-out infinite alternate;
 }
+footer .gold {
+  font-size: 0.9rem !important;
+  animation-delay: 1.5s;
+  transition: 0.5s ease-in-out;
+  animation: beat-g 1.2s ease-in-out infinite alternate;
+}
+
 footer .ff {
   min-width: fit-content;
+  transition: 0.5s ease-in-out;
 }
 .cp {
   display: flex;
@@ -1055,6 +1087,7 @@ footer .ff {
   gap: 12.5px;
   text-align: center;
   width: 100%;
+  transition: 0.5s ease-in-out;
   justify-content: space-evenly;
 
   /* justify-content: space-between; */
@@ -1063,7 +1096,7 @@ footer .ff {
 }
 
 .cp > * {
-  transition: all 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .cp .right:hover {
   color: whitesmoke;
@@ -1075,7 +1108,7 @@ footer .ff {
   color: whitesmoke;
 }
 .feed {
-  padding: 0 25px 75px 25px;
+  padding: 25px 5vh;
 }
 .feed .t-title,
 .project .t-title {
@@ -1086,8 +1119,15 @@ footer .ff {
   font-family: 'Alegreya Sans SC', sans-serif;
   /* font-family: 'Russo One', sans-serif; */
   font-family: 'Ubuntu', sans-serif;
-  margin-bottom: 75px;
+  margin-bottom: 50px;
+}
+.project .t-title {
+  margin-bottom: 0px;
 }
 .project {
   padding: 25px;
+}
+.cloud Canvas {
+  min-height: 50vh;
+  height: 600px !important;
 }
