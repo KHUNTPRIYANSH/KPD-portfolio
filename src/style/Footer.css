@@ -1,0 +1,55 @@
+/*=================footer===============*/
+footer {
+  position: relative;
+  bottom: 0;
+  background-color: #272731;
+  color: #8c8c8e;
+  width: 100%;
+  padding: 12.5px 25px;
+  font-size: 0.9rem !important;
+}
+
+footer .mid {
+  display: flex;
+  align-items: center;
+  animation-delay: 1.5s;
+  transition: 0.5s ease-in-out;
+  animation: beat 1.2s ease-in-out infinite alternate;
+}
+footer .gold {
+  font-size: 0.9rem !important;
+  animation-delay: 1.5s;
+  transition: 0.5s ease-in-out;
+  animation: beat-g 1.2s ease-in-out infinite alternate;
+}
+
+footer .ff {
+  min-width: fit-content;
+  transition: 0.5s ease-in-out;
+}
+.cp {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12.5px;
+  text-align: center;
+  width: 100%;
+  transition: 0.5s ease-in-out;
+  justify-content: space-evenly;
+
+  /* justify-content: space-between; */
+  /* flex-direction: column; */
+  align-items: center;
+}
+
+.cp > * {
+  transition: 0.5s ease-in-out;
+}
+.cp .right:hover {
+  color: whitesmoke;
+}
+.cp .left:hover {
+  color: whitesmoke;
+}
+.cp .mid:hover {
+  color: whitesmoke;
+}

@@ -1,0 +1,55 @@
+.service {
+  height: auto;
+  width: 100%;
+  padding: 25px;
+}
+.service .t-title {
+  color: white;
+  font-weight: 500;
+  font-size: 1.25rem;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  /* font-family: 'Russo One', sans-serif; */
+  font-family: 'Ubuntu', sans-serif;
+}
+.service .row {
+  /* width: 100%; */
+  display: flex;
+  margin: 25px 0;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 25px;
+  justify-content: space-evenly;
+}
+.service .row .col {
+  width: 20vw;
+  min-width: 320px;
+  /* width: 30%; */
+  /* text-align: justify; */
+  border-radius: 3px;
+  line-height: 25px;
+  background-color: #272731;
+  padding: 45px 33px;
+  transition: 0.35s ease-in-out;
+}
+.service .row .col .t-title {
+  font-size: 1rem;
+  margin-bottom: 12.5px;
+}
+.service .row .col .s-title {
+  font-size: 0.9rem;
+  margin-bottom: 12.5px;
+  letter-spacing: 0.6px;
+}
+.service .row .col .gold {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-size: 1rem !important;
+
+  cursor: pointer;
+  font-family: 'Russo One', sans-serif;
+}
+.service .row .col:hover {
+  transform: scale(1.07);
+  /* box-shadow: 0 0 5px 1px rgba(255, 217, 0, 0.584); */
+}
