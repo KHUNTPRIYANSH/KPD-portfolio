@@ -108,10 +108,10 @@ const Home = () => {
           <Clud />
         </section>
         <section className="contact" id="s6">
-          <div className="t-title">
+          {/* <div className="t-title">
             Info <span className="gold">{" / "}</span>
             Contact
-          </div>
+          </div> */}
           <Contact />
         </section>
 

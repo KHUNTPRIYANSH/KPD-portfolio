@@ -617,12 +617,12 @@ strong {
   position: sticky;
   bottom: 0;
 }
-.a-6 center * {
+.a-6 center a {
   font-size: 1.2rem;
   transition: 0.2s;
   cursor: pointer;
 }
-.a-6 center > *:hover {
+.a-6 center > a:hover {
   color: #e1af16;
 }
 .a-6 center {

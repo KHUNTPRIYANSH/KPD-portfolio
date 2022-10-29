@@ -65,6 +65,7 @@ function Cloud({ count, radius }) {
       "flutter",
       "KPD",
       "expressJs",
+
       "nodeJs",
       "reactJs",
       "figma",

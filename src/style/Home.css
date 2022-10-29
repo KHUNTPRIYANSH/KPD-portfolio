@@ -16,6 +16,9 @@
 
   /* outline: 1px solid #e1af16; */
 }
+section {
+  padding: 25px;
+}
 .home {
   flex: 1;
   /* width: 65vw; */
@@ -150,4 +153,12 @@
   align-items: center;
   color: white;
   font-size: 1rem;
+}
+.f-b {
+  content: '';
+  background: radial-gradient(#191923d8, #191923),
+    url('https://raw.githubusercontent.com/KHUNTPRIYANSH/KPD-portfolio/main/imgs/bg2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

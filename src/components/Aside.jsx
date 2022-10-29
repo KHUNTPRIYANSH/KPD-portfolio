@@ -143,17 +143,30 @@ const Aside = () => {
           </div>
           <div className="line"></div>
           <div className="down">
-            DOWNLOAD CV <DownloadIcon className="down-icon" />{" "}
+            DOWNLOAD CV <DownloadIcon className="down-icon" />
           </div>
         </div>
       </div>
       <div className="a-6">
         <center>
-          <LinkedInIcon />
-          <InstagramIcon />
-          <GitHubIcon />
-          <MailIcon />
-          <TwitterIcon />
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/priyansh-khunt-2318061b0/"
+          >
+            <LinkedInIcon />
+          </a>
+          <a target="_blank" href="https://www.instagram.com/priyansh_kpd/">
+            <InstagramIcon />
+          </a>
+          <a target="_blank" href="https://github.com/KHUNTPRIYANSH">
+            <GitHubIcon />
+          </a>
+          <a target="_blank" href="https://mail.google.com/mail/u/0/#inbox">
+            <MailIcon />
+          </a>
+          <a target="_blank" href="https://twitter.com/Whitedevil1237">
+            <TwitterIcon />
+          </a>
         </center>
       </div>
     </aside>
