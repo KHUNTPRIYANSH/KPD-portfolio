@@ -107,11 +107,15 @@ const Home = () => {
           </div>
           <Clud />
         </section>
+<<<<<<< Updated upstream
         <section className="contact" id="s6">
           <div className="t-title">
             Info <span className="gold">{" / "}</span>
             Contact
           </div>
+=======
+        <section className="project contact">
+>>>>>>> Stashed changes
           <Contact />
         </section>
 
