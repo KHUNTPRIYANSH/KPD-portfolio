@@ -1,0 +1,33 @@
+.f-b {
+  content: '';
+  background: radial-gradient(#191923d8, #191923),
+    url('https://raw.githubusercontent.com/KHUNTPRIYANSH/KPD-portfolio/main/imgs/bg2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.feed {
+  padding: 25px 5vh;
+}
+section .t-title,
+.project .t-title {
+  color: white;
+  font-weight: 500;
+  font-size: 1.25rem;
+  text-align: left;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  /* font-family: 'Russo One', sans-serif; */
+  font-family: 'Ubuntu', sans-serif;
+  margin-bottom: 50px;
+}
+.project .t-title {
+  margin-bottom: 0px;
+}
+.project {
+  padding: 25px;
+}
+.cloud Canvas {
+  min-height: 50vh;
+  height: 600px !important;
+}

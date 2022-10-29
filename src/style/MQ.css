@@ -1,0 +1,50 @@
+@media only screen and (max-width: 990px) {
+  .service .row .col {
+    min-width: 40vw;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .service .row .col {
+    min-width: 80vw;
+  }
+  .frm main {
+    margin: 0 !important;
+    width: 100%;
+    padding: 10px;
+  }
+  .num {
+    margin: 25px;
+  }
+  .frm {
+    padding: 0 !important;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .frm .left h1 {
+    font-size: 2.5rem;
+  }
+  .frm .left .code {
+    font-size: 1.2rem;
+  }
+  .cp .mid {
+    display: none;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .frm .left h1 {
+    font-size: 2rem;
+  }
+  .frm .left .btn {
+    padding: 12px 20px;
+  }
+
+  .frm .left .code {
+    font-size: 1rem;
+  }
+  .frm main .left {
+    padding: 50px 25px;
+    padding-top: 95px;
+    align-items: center;
+    text-align: center;
+  }
+}

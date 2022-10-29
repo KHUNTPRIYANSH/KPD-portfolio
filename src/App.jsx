@@ -1,11 +1,29 @@
 import React, { useState } from "react";
-import Aside from "./components/Aside";
-import Home from "./components/Home";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+//icon
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
+
+//components
+import Aside from "./components/Aside";
+import Home from "./components/Home";
 import Menu from "./components/Menu";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+// style
+import "./style/Aside.css";
+import "./style/FeedBack.css";
+import "./style/TimeLine.css";
+import "./style/Home.css";
+import "./style/Menu.css";
+import "./style/Service.css";
+import "./style/Project.css";
+import "./style/Contact.css";
+import "./style/Footer.css";
+import "./style/MQ.css";
+import "./style/App.css";
+
 const App = () => {
   const [aside, setAside] = useState(false);
 

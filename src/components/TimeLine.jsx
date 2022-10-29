@@ -1,5 +1,4 @@
 import React from "react";
-import "./TimeLine.css";
 const TimeLine = () => {
   return (
     <div>

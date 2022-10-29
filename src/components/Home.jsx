@@ -1,30 +1,15 @@
 import React, { useState } from "react";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";
-import FeedBack from "./FeedBack";
-import Clud from "./Cloud";
 import CountUp from "react-countup";
 import Typewriter from "typewriter-effect";
+import Footer from "./Footer.jsx";
+import Clud from "./Cloud";
+import FeedBack from "./FeedBack";
 import TimeLine from "./TimeLine";
+import Service from "./Service.jsx";
+import Contact from "./Contact.jsx";
 const Home = () => {
-  const [heart, setHeart] = useState(false);
-
-  var clickHeart = () => {
-    if (heart == false) {
-      console.log("vis");
-
-      document.getElementById("Heart").classList.remove("fa-heart-o");
-      document.getElementById("Heart").classList.add("fa-heart");
-      setHeart(true);
-    } else {
-      console.log("hid");
-      document.getElementById("Heart").classList.remove("fa-heart");
-      document.getElementById("Heart").classList.add("fa-heart-o");
-
-      setHeart(false);
-    }
-  };
   return (
     <>
       <section className="home">
@@ -99,75 +84,7 @@ const Home = () => {
 
         <section className="service" id="s2">
           <div className="t-title">My Services</div>
-          <div className="row">
-            <div className="col">
-              <div className="t-title">Web Development</div>
-              <div className="s-title">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat
-                tenetur pariatur doloribus.
-              </div>
-              <div className="gold">
-                ORDER NOW <ArrowForwardIosIcon className="gold" />
-              </div>
-            </div>
-            <div className="col">
-              <div className="t-title">UI/UX Design</div>
-              <div className="s-title">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat
-                tenetur pariatur doloribus.
-              </div>
-              <div className="gold">
-                ORDER NOW <ArrowForwardIosIcon className="gold" />
-              </div>
-            </div>
-            <div className="col">
-              <div className="t-title">Advertising</div>
-              <div className="s-title">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat
-                tenetur pariatur doloribus.
-              </div>
-              <div className="gold">
-                ORDER NOW <ArrowForwardIosIcon className="gold" />
-              </div>
-            </div>
-
-            <div className="col">
-              <div className="t-title">Smart Contracts</div>
-              <div className="s-title">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat
-                tenetur pariatur doloribus.
-              </div>
-              <div className="gold">
-                ORDER NOW <ArrowForwardIosIcon className="gold" />
-              </div>
-            </div>
-            <div className="col">
-              <div className="t-title">App Development</div>
-              <div className="s-title">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat
-                tenetur pariatur doloribus.
-              </div>
-              <div className="gold">
-                ORDER NOW <ArrowForwardIosIcon className="gold" />
-              </div>
-            </div>
-            <div className="col">
-              <div className="t-title">AI / ML</div>
-              <div className="s-title">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat
-                tenetur pariatur doloribus.
-              </div>
-              <div className="gold">
-                ORDER NOW <ArrowForwardIosIcon className="gold" />
-              </div>
-            </div>
-          </div>
+          <Service />
         </section>
         <section className="tml">
           <div className="t-title">
@@ -190,19 +107,15 @@ const Home = () => {
           </div>
           <Clud />
         </section>
-
-        <footer>
-          <div className="cp">
-            <div className="left ff">© 2022 All Rights Reserved.</div>
-            <div className="mid ff" onClick={clickHeart}>
-              Made with &nbsp;
-              <i className="gold fa fa-heart-o" id="Heart" />
-              &nbsp; by
-              <span className="gold">&nbsp; KPD </span>
-            </div>
-            <div className="right ff">Email: khuntpriyansh1@gmail.com.com</div>
+        <section className="contact" id="s6">
+          <div className="t-title">
+            Info <span className="gold">{" / "}</span>
+            Contact
           </div>
-        </footer>
+          <Contact />
+        </section>
+
+        <Footer />
       </section>
     </>
   );
