@@ -1,0 +1,27 @@
+.parallax-effect-glare-scale {
+  transform-style: preserve-3d;
+
+  width: 20vw;
+  min-width: 320px;
+  /* width: 30%; */
+  /* text-align: justify; */
+  border-radius: 3px;
+  line-height: 25px;
+  /* background-color: #272731; */
+  //   padding: 45px 33px;
+  transition: 0.35s ease-in-out;
+
+  .inner-element {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    // font-size: 35px;
+    // font-style: italic;
+    // color: white;
+    transform: translateZ(45px);
+  }
+}
+.bggg {
+  background-color: #272731;
+}

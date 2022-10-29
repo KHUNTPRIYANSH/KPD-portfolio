@@ -15,11 +15,13 @@ footer .mid {
   animation-delay: 1.5s;
   transition: 0.5s ease-in-out;
   animation: beat 1.2s ease-in-out infinite alternate;
+  cursor: pointer;
 }
 footer .gold {
   font-size: 0.9rem !important;
   animation-delay: 1.5s;
   transition: 0.5s ease-in-out;
+  color: gold !important;
   animation: beat-g 1.2s ease-in-out infinite alternate;
 }
 
@@ -52,4 +54,5 @@ footer .ff {
 }
 .cp .mid:hover {
   color: whitesmoke;
+  transform: scale(1.2);
 }

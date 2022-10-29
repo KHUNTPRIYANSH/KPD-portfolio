@@ -100,12 +100,14 @@ const Home = () => {
           </div>
           <FeedBack />
         </section>
-        <section className="project f-b" id="s4">
+        <section className="skill f-b" id="s4">
           <div className="t-title">
             Technologies <span className="gold">{" / "}</span>
             Skills
           </div>
-          <Clud />
+          <div className="jagya">
+            <Clud />
+          </div>
         </section>
         <section className="contact" id="s6">
           {/* <div className="t-title">

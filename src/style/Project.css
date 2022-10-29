@@ -10,8 +10,7 @@
 .feed {
   padding: 25px 5vh;
 }
-section .t-title,
-.project .t-title {
+section .t-title {
   color: white;
   font-weight: 500;
   font-size: 1.25rem;
@@ -21,13 +20,21 @@ section .t-title,
   font-family: 'Ubuntu', sans-serif;
   margin-bottom: 50px;
 }
-.project .t-title {
+.skill .t-title {
   margin-bottom: 0px;
 }
-.project {
+.skill {
   padding: 25px;
+  background: radial-gradient(#191923aa, #191923f6, #191923),
+    url('https://raw.githubusercontent.com/KHUNTPRIYANSH/KPD-portfolio/main/src/assets/round.jpg');
+  /* background: radial-gradient(red, green, blue),
+    url('https://raw.githubusercontent.com/KHUNTPRIYANSH/KPD-portfolio/main/src/assets/round.jpg'); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .cloud Canvas {
   min-height: 50vh;
   height: 600px !important;
+  /* background-color: red; */
 }

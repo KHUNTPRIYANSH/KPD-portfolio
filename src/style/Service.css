@@ -27,7 +27,7 @@
   /* text-align: justify; */
   border-radius: 3px;
   line-height: 25px;
-  background-color: #272731;
+  /* background-color: #272731; */
   padding: 45px 33px;
   transition: 0.35s ease-in-out;
 }
@@ -45,11 +45,11 @@
   align-items: center;
   font-size: 1rem;
   font-size: 1rem !important;
-
+  /* color: #ac97633f; */
   cursor: pointer;
   font-family: 'Russo One', sans-serif;
 }
-.service .row .col:hover {
+/* .service .row .col:hover {
   transform: scale(1.07);
-  /* box-shadow: 0 0 5px 1px rgba(255, 217, 0, 0.584); */
-}
+  box-shadow: 0 0 5px 1px rgba(255, 217, 0, 0.584);
+} */

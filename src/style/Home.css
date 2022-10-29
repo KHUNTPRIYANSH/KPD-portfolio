@@ -154,11 +154,6 @@ section {
   color: white;
   font-size: 1rem;
 }
-.f-b {
-  content: '';
-  background: radial-gradient(#191923d8, #191923),
-    url('https://raw.githubusercontent.com/KHUNTPRIYANSH/KPD-portfolio/main/imgs/bg2.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+.jagya {
+  padding: 0 7vw;
 }

@@ -142,9 +142,13 @@ const Aside = () => {
             <DoneIcon id="tic-r" /> Solidity , Web 3
           </div>
           <div className="line"></div>
-          <div className="down">
+          <a
+            target="_blank"
+            href="https://drive.google.com/file/d/1VPdytq8-Hlpxs-aWoZ0T_6vzIcyZObge/view?usp=share_link"
+            className="down"
+          >
             DOWNLOAD CV <DownloadIcon className="down-icon" />
-          </div>
+          </a>
         </div>
       </div>
       <div className="a-6">
