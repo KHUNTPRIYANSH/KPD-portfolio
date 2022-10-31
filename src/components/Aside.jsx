@@ -64,7 +64,7 @@ const Aside = () => {
         <div className="line"></div>
       </div>
       <div className="a-4">
-        <strong>Coding</strong>
+        <strong>Programming</strong>
         <div className="pro-sec">
           <div className="pro">
             <div className="info-txt">
@@ -124,7 +124,7 @@ const Aside = () => {
         </div>
       </div>
       <div className="a-5">
-        <strong>Knowledge</strong>
+        <strong>Tech Stack</strong>
         <div className="tic-sec">
           <div className="tic">
             <DoneIcon id="tic-r" /> Bootstrap, Materialize
@@ -136,7 +136,7 @@ const Aside = () => {
             <DoneIcon id="tic-r" /> Gulp, Webpack, Grunt
           </div>
           <div className="tic">
-            <DoneIcon id="tic-r" /> GIT knowledge
+            <DoneIcon id="tic-r" /> Git and Github
           </div>
           <div className="tic">
             <DoneIcon id="tic-r" /> Solidity , Web 3
