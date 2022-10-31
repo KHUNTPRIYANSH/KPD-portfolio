@@ -53,3 +53,10 @@
   transform: scale(1.07);
   box-shadow: 0 0 5px 1px rgba(255, 217, 0, 0.584);
 } */
+
+.s-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
