@@ -9,6 +9,7 @@ import FeedBack from "./FeedBack";
 import TimeLine from "./TimeLine";
 import Service from "./Service.jsx";
 import Contact from "./Contact.jsx";
+import Projects from "./Projects.jsx";
 const Home = () => {
   return (
     <>
@@ -28,10 +29,10 @@ const Home = () => {
                 <Typewriter
                   options={{
                     strings: [
-                      " Hey, I'm Priyansh Khunt",
+                      " Hi there, I'm Priyansh Khunt",
                       " I build amazing Websites",
-                      " I'm CSE Student",
-                      " I have also used flutter",
+                      " I'm a CSE Student",
+                      " I have experience in many Web-Dev and Designing Technologies",
                     ],
                     autoStart: true,
                     loop: true,
@@ -109,14 +110,12 @@ const Home = () => {
             <Clud />
           </div>
         </section>
+        <section className="project" id="s5">
+          <Projects />
+        </section>
         <section className="contact" id="s6">
-          {/* <div className="t-title">
-            Info <span className="gold">{" / "}</span>
-            Contact
-          </div> */}
           <Contact />
         </section>
-
         <Footer />
       </section>
     </>
