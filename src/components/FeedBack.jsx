@@ -44,7 +44,7 @@ export default function FeedBack() {
           <div class="review">
             <div class="fc">
               <img
-                src="https://bslthemes.com/arter/wp-content/uploads/2020/09/testimonial-2-140x140.jpg"
+                src="https://raw.githubusercontent.com/Devrajsinh03/KPD-portfolio-up/main/src/assets/devraj.jpeg"
                 alt=""
               />
             </div>
@@ -132,7 +132,7 @@ export default function FeedBack() {
           <div class="review">
             <div class="fc">
               <img
-                src="https://bslthemes.com/arter/wp-content/uploads/2020/09/testimonial-2-140x140.jpg"
+                src="https://raw.githubusercontent.com/Devrajsinh03/KPD-portfolio-up/main/src/assets/dev.jpg"
                 alt=""
               />
             </div>
